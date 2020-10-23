@@ -1,0 +1,42 @@
+<div class="container" id="container" [class.right-panel-active]="!login">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Código convite</h1>
+			<input type="text" placeholder="Código" />
+			<button>Acessar</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+
+      <div style="
+    background-image: url('../../../../assets/_images/marca.jpg');
+    width: 385px;
+    height: 168px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+"></div>
+
+			<h2 style="padding-top: 5px;">Login</h2>
+			<input type="text" placeholder="RU" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Esqueci minha senha?</a>
+			<button>Acessar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Olá convidado!</h1>
+				<p>Acesse com o seu código e participe.</p>
+				<button class="ghost" id="signIn" (click)="login = !login">ou fazer login</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Olá participante!</h1>
+				<p></p>
+				<button class="ghost" id="signUp" (click)="login = !login">Acessar por convite</button>
+			</div>
+		</div>
+	</div>
+</div>
